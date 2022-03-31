@@ -1,21 +1,21 @@
 pipeline{
-       agent any
-       stages{
-              stage('Bulid'){
-                  steps{
-                      echo"Building Project.."
-                        }
-                      }
-               stage('test'){
-                    steps{
-                       echo"testing project.."
-                         }
-                      }
-                stage('Deploy'){
-                     step{
-                        echo"Deploying project.."
-                         }
-                      }
-               }
-     }
+agent any
+stages{
+stage('Bulid'){
+steps{
+echo"Building Project.."
+}
+}
+stage('test'){
+steps{
+echo"testing project.."
+}
+}
+stage('Deploy'){
+steps{
+echo"Deploying project.."
+}
+}
+}
+}
     
